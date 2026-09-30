@@ -35,7 +35,7 @@ function App() {
 
   async function discover() {
     setLoading(true); setError(''); setMessage('');
-    try { const result = await request('/discovery', { method: 'POST' }); await refresh(); if (result.candidates[0]) setSelectedId(result.candidates[0]._id); setMessage(`Discovery complete: ${result.count} candidate(s) available. ${result.sourceStatus}`); }
+    try { const result = await request('/discovery/run', { method: 'POST' }); await refresh(); if (result.candidates[0]) setSelectedId(result.candidates[0]._id); setMessage(`Discovery complete: ${result.count} candidate(s) available. ${result.sourceStatus}`); }
     catch (e) { setError(e.message); } finally { setLoading(false); }
   }
 
