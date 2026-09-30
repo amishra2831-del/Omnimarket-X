@@ -1,0 +1,18 @@
+{
+  "name": "omnimarketx-market-discovery-api",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "node --watch src/server.js",
+    "start": "node src/server.js",
+    "test": "node --test"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.2",
+    "fast-xml-parser": "^4.5.0",
+    "mongoose": "^8.8.4"
+  },
+  "devDependencies": {}
+}
